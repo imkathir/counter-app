@@ -5,8 +5,14 @@ export default class Counter extends Component {
         count: 0
     };
 
+    constructor(){
+        super();
+        //will make Counter classes instance's handleIncrement method to be that instance's reference
+        this.handleIncrement = this.handleIncrement.bind(this);
+    }
+
     handleIncrement(){
-        console.log('Increment clicked');
+        console.log('Increment clicked', this);
     }
 
     render() { 
