@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
 export default class Counter extends Component {
-
+    componentDidUpdate(prevProps, prevState) {
+        console.log('prevProps ', prevProps);
+        console.log('prevState', prevState);
+        //Make Ajax calls based changes in state data objects.
+    }
     render() { 
         console.log("Counter rendered")
         return (
