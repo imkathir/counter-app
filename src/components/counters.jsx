@@ -4,6 +4,7 @@ import Counter from './counter'
 class Counters extends Component {
     
     render() { 
+        console.log("Counters rendered")
         return ( 
             <div>
                 TotalCounter =<button className="btn btn-secondary btn-sm">{this.props.totalCounters}</button>
