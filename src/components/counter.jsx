@@ -6,6 +6,12 @@ export default class Counter extends Component {
         console.log('prevState', prevState);
         //Make Ajax calls based changes in state data objects.
     }
+
+    componentWillUnmount(){
+        //Used to delete listeners or some tasks
+        console.log("Counter unmount")
+    }
+
     render() { 
         console.log("Counter rendered")
         return (
